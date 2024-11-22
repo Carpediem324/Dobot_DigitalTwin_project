@@ -67,7 +67,10 @@ def main(args=None):
     rclpy.init(args=args)
 
     # 서버 IP와 포트 설정
-    host = '192.168.26.37'
+    # 경석이 컴
+    # host = '192.168.26.37'
+    # 내컴
+    host = '192.168.26.36'
     port = 10000
 
     node = JointStateSocketPublisher(host, port)
