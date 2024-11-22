@@ -1,0 +1,41 @@
+[0.341s] Invoking command in '/home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/magician_ros2_control_system_ws/install/interate_prac:/home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_visualization_tools:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_state_updater:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_kinematics:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_homing:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_end_effector:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_control_panel:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver -- -j20 -l20
+[0.673s] Built target ament_cmake_python_copy_dobot_driver
+[0.673s] running egg_info
+[0.673s] writing dobot_driver.egg-info/PKG-INFO
+[0.674s] writing dependency_links to dobot_driver.egg-info/dependency_links.txt
+[0.674s] writing top-level names to dobot_driver.egg-info/top_level.txt
+[0.674s] reading manifest file 'dobot_driver.egg-info/SOURCES.txt'
+[0.674s] Traceback (most recent call last):
+[0.674s]   File "/home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver/ament_cmake_python/dobot_driver/setup.py", line 4, in <module>
+[0.674s]     setup(
+[0.674s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 117, in setup
+[0.674s]     return distutils.core.setup(**attrs)
+[0.674s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 183, in setup
+[0.674s]     return run_commands(dist)
+[0.674s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 199, in run_commands
+[0.674s]     dist.run_commands()
+[0.674s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 954, in run_commands
+[0.674s]     self.run_command(cmd)
+[0.674s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/dist.py", line 994, in run_command
+[0.675s]     super().run_command(command)
+[0.675s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 973, in run_command
+[0.675s]     cmd_obj.run()
+[0.675s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 312, in run
+[0.675s]     self.find_sources()
+[0.675s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 320, in find_sources
+[0.675s]     mm.run()
+[0.675s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 548, in run
+[0.675s]     self.prune_file_list()
+[0.675s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/command/sdist.py", line 162, in prune_file_list
+[0.675s]     super().prune_file_list()
+[0.675s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/_distutils/command/sdist.py", line 380, in prune_file_list
+[0.675s]     base_dir = self.distribution.get_fullname()
+[0.675s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 267, in get_fullname
+[0.676s]     return _distribution_fullname(self.get_name(), self.get_version())
+[0.676s]   File "/home/ubuntu/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 285, in _distribution_fullname
+[0.676s]     canonicalize_version(version, strip_trailing_zero=False),
+[0.676s] TypeError: canonicalize_version() got an unexpected keyword argument 'strip_trailing_zero'
+[0.676s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_dobot_driver_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_dobot_driver_egg] Error 1
+[0.676s] gmake[1]: *** [CMakeFiles/Makefile2:164: CMakeFiles/ament_cmake_python_build_dobot_driver_egg.dir/all] Error 2
+[0.676s] gmake: *** [Makefile:146: all] Error 2
+[0.837s] Invoked command in '/home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/magician_ros2_control_system_ws/install/interate_prac:/home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_visualization_tools:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_state_updater:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_kinematics:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_homing:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_end_effector:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_control_panel:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver -- -j20 -l20

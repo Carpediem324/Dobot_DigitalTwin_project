@@ -1,0 +1,53 @@
+[1.784s] Invoking command in '/home/ubuntu/magician_ros2_control_system_ws/src/dobot_demos': AMENT_PREFIX_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs LD_LIBRARY_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dobot_demos build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/install.log --single-version-externally-managed install_data
+[1.982s] running egg_info
+[1.982s] creating ../../build/dobot_demos/dobot_demos.egg-info
+[1.982s] writing ../../build/dobot_demos/dobot_demos.egg-info/PKG-INFO
+[1.982s] writing dependency_links to ../../build/dobot_demos/dobot_demos.egg-info/dependency_links.txt
+[1.982s] writing entry points to ../../build/dobot_demos/dobot_demos.egg-info/entry_points.txt
+[1.983s] writing requirements to ../../build/dobot_demos/dobot_demos.egg-info/requires.txt
+[1.983s] writing top-level names to ../../build/dobot_demos/dobot_demos.egg-info/top_level.txt
+[1.983s] writing manifest file '../../build/dobot_demos/dobot_demos.egg-info/SOURCES.txt'
+[1.984s] reading manifest file '../../build/dobot_demos/dobot_demos.egg-info/SOURCES.txt'
+[1.984s] writing manifest file '../../build/dobot_demos/dobot_demos.egg-info/SOURCES.txt'
+[1.984s] running build
+[1.984s] running build_py
+[1.984s] creating /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build
+[1.984s] creating /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib
+[1.984s] creating /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos
+[1.984s] copying dobot_demos/__init__.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos
+[1.984s] copying dobot_demos/PTP_client.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos
+[1.984s] copying dobot_demos/homing_client.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos
+[1.984s] copying dobot_demos/pick_and_place.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos
+[1.984s] copying dobot_demos/gripper_client.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos
+[1.985s] copying dobot_demos/suction_cup_client.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos
+[1.985s] running install
+[1.985s] running install_lib
+[1.985s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos
+[1.985s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos/__init__.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos
+[1.985s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos/PTP_client.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos
+[1.985s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos/homing_client.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos
+[1.986s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos/pick_and_place.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos
+[1.986s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos/gripper_client.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos
+[1.986s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build/lib/dobot_demos/suction_cup_client.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos
+[1.986s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos/__init__.py to __init__.cpython-310.pyc
+[1.986s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos/PTP_client.py to PTP_client.cpython-310.pyc
+[1.987s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos/homing_client.py to homing_client.cpython-310.pyc
+[1.987s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos/pick_and_place.py to pick_and_place.cpython-310.pyc
+[1.988s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos/gripper_client.py to gripper_client.cpython-310.pyc
+[1.988s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos/suction_cup_client.py to suction_cup_client.cpython-310.pyc
+[1.988s] running install_data
+[1.988s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/share/ament_index
+[1.988s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/share/ament_index/resource_index
+[1.988s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/share/ament_index/resource_index/packages
+[1.989s] copying resource/dobot_demos -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/share/ament_index/resource_index/packages
+[1.989s] copying package.xml -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/share/dobot_demos
+[1.989s] running install_egg_info
+[1.990s] Copying ../../build/dobot_demos/dobot_demos.egg-info to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos-1.0.0-py3.10.egg-info
+[1.990s] running install_scripts
+[2.004s] Installing test_gripper script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/dobot_demos
+[2.004s] Installing test_homing script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/dobot_demos
+[2.004s] Installing test_pick_and_place script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/dobot_demos
+[2.005s] Installing test_point_to_point script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/dobot_demos
+[2.005s] Installing test_suction_cup script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/dobot_demos
+[2.005s] writing list of installed files to '/home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/install.log'
+[2.022s] Invoked command in '/home/ubuntu/magician_ros2_control_system_ws/src/dobot_demos' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs LD_LIBRARY_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dobot_demos build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/install.log --single-version-externally-managed install_data

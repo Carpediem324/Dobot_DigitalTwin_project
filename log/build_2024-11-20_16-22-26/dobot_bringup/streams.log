@@ -1,0 +1,36 @@
+[1.722s] Invoking command in '/home/ubuntu/magician_ros2_control_system_ws/src/dobot_bringup': PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dobot_bringup build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/install.log --single-version-externally-managed install_data
+[1.883s] running egg_info
+[1.883s] writing ../../build/dobot_bringup/dobot_bringup.egg-info/PKG-INFO
+[1.883s] writing dependency_links to ../../build/dobot_bringup/dobot_bringup.egg-info/dependency_links.txt
+[1.883s] writing entry points to ../../build/dobot_bringup/dobot_bringup.egg-info/entry_points.txt
+[1.884s] writing requirements to ../../build/dobot_bringup/dobot_bringup.egg-info/requires.txt
+[1.884s] writing top-level names to ../../build/dobot_bringup/dobot_bringup.egg-info/top_level.txt
+[1.884s] reading manifest file '../../build/dobot_bringup/dobot_bringup.egg-info/SOURCES.txt'
+[1.885s] writing manifest file '../../build/dobot_bringup/dobot_bringup.egg-info/SOURCES.txt'
+[1.885s] running build
+[1.885s] running build_py
+[1.886s] creating /home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/build
+[1.886s] creating /home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/build/lib
+[1.886s] creating /home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/build/lib/dobot_bringup
+[1.886s] copying dobot_bringup/__init__.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/build/lib/dobot_bringup
+[1.886s] copying dobot_bringup/set_tool_null.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/build/lib/dobot_bringup
+[1.886s] running install
+[1.886s] running install_lib
+[1.886s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/lib/python3.10/site-packages/dobot_bringup
+[1.886s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/build/lib/dobot_bringup/__init__.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/lib/python3.10/site-packages/dobot_bringup
+[1.887s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/build/lib/dobot_bringup/set_tool_null.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/lib/python3.10/site-packages/dobot_bringup
+[1.887s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/lib/python3.10/site-packages/dobot_bringup/__init__.py to __init__.cpython-310.pyc
+[1.887s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/lib/python3.10/site-packages/dobot_bringup/set_tool_null.py to set_tool_null.cpython-310.pyc
+[1.887s] running install_data
+[1.887s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/share/ament_index
+[1.887s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/share/ament_index/resource_index
+[1.887s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/share/ament_index/resource_index/packages
+[1.887s] copying resource/dobot_bringup -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/share/ament_index/resource_index/packages
+[1.888s] copying package.xml -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/share/dobot_bringup
+[1.888s] copying launch/dobot_magician_control_system.launch.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/share/dobot_bringup
+[1.888s] running install_egg_info
+[1.889s] Copying ../../build/dobot_bringup/dobot_bringup.egg-info to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/lib/python3.10/site-packages/dobot_bringup-1.0.0-py3.10.egg-info
+[1.889s] running install_scripts
+[1.903s] Installing set_tool_null script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/lib/dobot_bringup
+[1.903s] writing list of installed files to '/home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/install.log'
+[1.920s] Invoked command in '/home/ubuntu/magician_ros2_control_system_ws/src/dobot_bringup' returned '0': PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dobot_bringup build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/dobot_bringup/install.log --single-version-externally-managed install_data

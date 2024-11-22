@@ -1,0 +1,47 @@
+[0.387s] Invoking command in '/home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver -- -j20 -l20
+[1.093s] Built target ament_cmake_python_copy_dobot_driver
+[1.093s] running egg_info
+[1.093s] writing dobot_driver.egg-info/PKG-INFO
+[1.093s] writing dependency_links to dobot_driver.egg-info/dependency_links.txt
+[1.093s] writing top-level names to dobot_driver.egg-info/top_level.txt
+[1.093s] reading manifest file 'dobot_driver.egg-info/SOURCES.txt'
+[1.093s] writing manifest file 'dobot_driver.egg-info/SOURCES.txt'
+[1.093s] Built target ament_cmake_python_build_dobot_driver_egg
+[1.108s] Invoked command in '/home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver -- -j20 -l20
+[1.473s] Invoking command in '/home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver
+[1.483s] -- Install configuration: ""
+[1.483s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/environment/pythonpath.sh
+[1.483s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/environment/pythonpath.dsv
+[1.483s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver-1.0.0-py3.10.egg-info
+[1.483s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver-1.0.0-py3.10.egg-info/SOURCES.txt
+[1.483s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver-1.0.0-py3.10.egg-info/dependency_links.txt
+[1.483s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver-1.0.0-py3.10.egg-info/PKG-INFO
+[1.483s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver-1.0.0-py3.10.egg-info/top_level.txt
+[1.483s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver
+[1.484s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver/__init__.py
+[1.484s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver/parsers.py
+[1.484s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver/interface.py
+[1.484s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver/dobot_handle.py
+[1.484s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver/message.py
+[1.508s] Listing '/home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver'...
+[1.508s] Compiling '/home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver/__init__.py'...
+[1.508s] Compiling '/home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver/dobot_handle.py'...
+[1.508s] Compiling '/home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver/interface.py'...
+[1.508s] Compiling '/home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver/message.py'...
+[1.508s] Compiling '/home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/local/lib/python3.10/dist-packages/dobot_driver/parsers.py'...
+[1.511s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/ament_index/resource_index/package_run_dependencies/dobot_driver
+[1.511s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/ament_index/resource_index/parent_prefix_path/dobot_driver
+[1.512s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/environment/ament_prefix_path.sh
+[1.512s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/environment/ament_prefix_path.dsv
+[1.512s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/environment/path.sh
+[1.512s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/environment/path.dsv
+[1.512s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/local_setup.bash
+[1.513s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/local_setup.sh
+[1.513s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/local_setup.zsh
+[1.513s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/local_setup.dsv
+[1.513s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/package.dsv
+[1.513s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/ament_index/resource_index/packages/dobot_driver
+[1.513s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/cmake/dobot_driverConfig.cmake
+[1.513s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/cmake/dobot_driverConfig-version.cmake
+[1.513s] -- Installing: /home/ubuntu/magician_ros2_control_system_ws/install/dobot_driver/share/dobot_driver/package.xml
+[1.524s] Invoked command in '/home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/magician_ros2_control_system_ws/build/dobot_driver

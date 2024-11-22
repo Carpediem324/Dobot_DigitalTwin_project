@@ -1,0 +1,49 @@
+[1.731s] Invoking command in '/home/ubuntu/magician_ros2_control_system_ws/src/dobot_motion': AMENT_PREFIX_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs LD_LIBRARY_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/python3.10/site-packages:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dobot_motion build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/install.log --single-version-externally-managed install_data
+[1.909s] running egg_info
+[1.909s] creating ../../build/dobot_motion/dobot_motion.egg-info
+[1.909s] writing ../../build/dobot_motion/dobot_motion.egg-info/PKG-INFO
+[1.909s] writing dependency_links to ../../build/dobot_motion/dobot_motion.egg-info/dependency_links.txt
+[1.910s] writing entry points to ../../build/dobot_motion/dobot_motion.egg-info/entry_points.txt
+[1.910s] writing requirements to ../../build/dobot_motion/dobot_motion.egg-info/requires.txt
+[1.910s] writing top-level names to ../../build/dobot_motion/dobot_motion.egg-info/top_level.txt
+[1.910s] writing manifest file '../../build/dobot_motion/dobot_motion.egg-info/SOURCES.txt'
+[1.911s] reading manifest file '../../build/dobot_motion/dobot_motion.egg-info/SOURCES.txt'
+[1.911s] writing manifest file '../../build/dobot_motion/dobot_motion.egg-info/SOURCES.txt'
+[1.911s] running build
+[1.912s] running build_py
+[1.912s] creating /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build
+[1.912s] creating /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build/lib
+[1.912s] creating /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build/lib/dobot_motion
+[1.912s] copying dobot_motion/__init__.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build/lib/dobot_motion
+[1.912s] copying dobot_motion/PTP_params_class.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build/lib/dobot_motion
+[1.912s] copying dobot_motion/sliding_rail_server.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build/lib/dobot_motion
+[1.912s] copying dobot_motion/PTP_server.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build/lib/dobot_motion
+[1.912s] running install
+[1.912s] running install_lib
+[1.913s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/python3.10/site-packages/dobot_motion
+[1.913s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build/lib/dobot_motion/__init__.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/python3.10/site-packages/dobot_motion
+[1.913s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build/lib/dobot_motion/PTP_params_class.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/python3.10/site-packages/dobot_motion
+[1.913s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build/lib/dobot_motion/sliding_rail_server.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/python3.10/site-packages/dobot_motion
+[1.913s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build/lib/dobot_motion/PTP_server.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/python3.10/site-packages/dobot_motion
+[1.913s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/python3.10/site-packages/dobot_motion/__init__.py to __init__.cpython-310.pyc
+[1.913s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/python3.10/site-packages/dobot_motion/PTP_params_class.py to PTP_params_class.cpython-310.pyc
+[1.914s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/python3.10/site-packages/dobot_motion/sliding_rail_server.py to sliding_rail_server.cpython-310.pyc
+[1.914s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/python3.10/site-packages/dobot_motion/PTP_server.py to PTP_server.cpython-310.pyc
+[1.916s] running install_data
+[1.916s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/share/ament_index
+[1.916s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/share/ament_index/resource_index
+[1.916s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/share/ament_index/resource_index/packages
+[1.916s] copying resource/dobot_motion -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/share/ament_index/resource_index/packages
+[1.916s] copying package.xml -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/share/dobot_motion
+[1.916s] copying launch/dobot_rail.launch.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/share/dobot_motion
+[1.916s] copying launch/dobot_PTP.launch.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/share/dobot_motion
+[1.916s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/share/dobot_motion/config
+[1.916s] copying config/PTP_motion_params.yaml -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/share/dobot_motion/config
+[1.917s] copying config/sliding_rail_params.yaml -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/share/dobot_motion/config
+[1.917s] running install_egg_info
+[1.917s] Copying ../../build/dobot_motion/dobot_motion.egg-info to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/python3.10/site-packages/dobot_motion-1.0.0-py3.10.egg-info
+[1.918s] running install_scripts
+[1.932s] Installing PTP_server script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/dobot_motion
+[1.932s] Installing sliding_rail_server script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/dobot_motion
+[1.932s] writing list of installed files to '/home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/install.log'
+[1.950s] Invoked command in '/home/ubuntu/magician_ros2_control_system_ws/src/dobot_motion' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs LD_LIBRARY_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_motion/lib/python3.10/site-packages:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dobot_motion build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/dobot_motion/install.log --single-version-externally-managed install_data

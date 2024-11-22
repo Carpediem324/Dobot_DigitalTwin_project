@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/interate_prac/interate_prac.egg-info/PKG-INFO
+../../build/interate_prac/interate_prac.egg-info/SOURCES.txt
+../../build/interate_prac/interate_prac.egg-info/dependency_links.txt
+../../build/interate_prac/interate_prac.egg-info/entry_points.txt
+../../build/interate_prac/interate_prac.egg-info/requires.txt
+../../build/interate_prac/interate_prac.egg-info/top_level.txt
+../../build/interate_prac/interate_prac.egg-info/zip-safe
+interate_prac/__init__.py
+interate_prac/getDistance.py
+resource/interate_prac
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

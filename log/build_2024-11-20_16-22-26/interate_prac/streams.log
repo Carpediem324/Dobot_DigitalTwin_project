@@ -1,0 +1,35 @@
+[1.719s] Invoking command in '/home/ubuntu/magician_ros2_control_system_ws/src/interate_prac': PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/interate_prac build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/install.log --single-version-externally-managed install_data
+[1.877s] running egg_info
+[1.878s] writing ../../build/interate_prac/interate_prac.egg-info/PKG-INFO
+[1.878s] writing dependency_links to ../../build/interate_prac/interate_prac.egg-info/dependency_links.txt
+[1.878s] writing entry points to ../../build/interate_prac/interate_prac.egg-info/entry_points.txt
+[1.878s] writing requirements to ../../build/interate_prac/interate_prac.egg-info/requires.txt
+[1.878s] writing top-level names to ../../build/interate_prac/interate_prac.egg-info/top_level.txt
+[1.880s] reading manifest file '../../build/interate_prac/interate_prac.egg-info/SOURCES.txt'
+[1.881s] writing manifest file '../../build/interate_prac/interate_prac.egg-info/SOURCES.txt'
+[1.881s] running build
+[1.881s] running build_py
+[1.881s] creating /home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/build
+[1.881s] creating /home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/build/lib
+[1.881s] creating /home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/build/lib/interate_prac
+[1.882s] copying interate_prac/__init__.py -> /home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/build/lib/interate_prac
+[1.882s] copying interate_prac/getDistance.py -> /home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/build/lib/interate_prac
+[1.882s] running install
+[1.882s] running install_lib
+[1.882s] creating /home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/lib/python3.10/site-packages/interate_prac
+[1.882s] copying /home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/build/lib/interate_prac/__init__.py -> /home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/lib/python3.10/site-packages/interate_prac
+[1.883s] copying /home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/build/lib/interate_prac/getDistance.py -> /home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/lib/python3.10/site-packages/interate_prac
+[1.883s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/lib/python3.10/site-packages/interate_prac/__init__.py to __init__.cpython-310.pyc
+[1.883s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/lib/python3.10/site-packages/interate_prac/getDistance.py to getDistance.cpython-310.pyc
+[1.884s] running install_data
+[1.884s] creating /home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/share/ament_index
+[1.884s] creating /home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/share/ament_index/resource_index
+[1.884s] creating /home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/share/ament_index/resource_index/packages
+[1.884s] copying resource/interate_prac -> /home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/share/ament_index/resource_index/packages
+[1.885s] copying package.xml -> /home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/share/interate_prac
+[1.885s] running install_egg_info
+[1.885s] Copying ../../build/interate_prac/interate_prac.egg-info to /home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/lib/python3.10/site-packages/interate_prac-0.0.0-py3.10.egg-info
+[1.886s] running install_scripts
+[1.897s] Installing gd script to /home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/lib/interate_prac
+[1.897s] writing list of installed files to '/home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/install.log'
+[1.924s] Invoked command in '/home/ubuntu/magician_ros2_control_system_ws/src/interate_prac' returned '0': PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/interate_prac/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/interate_prac build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/interate_prac/install.log --single-version-externally-managed install_data

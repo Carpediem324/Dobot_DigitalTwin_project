@@ -1,0 +1,40 @@
+[1.715s] Invoking command in '/home/ubuntu/magician_ros2_control_system_ws/src/gyeong_pkg': PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gyeong_pkg build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/install.log --single-version-externally-managed install_data
+[1.872s] running egg_info
+[1.873s] writing ../../build/gyeong_pkg/gyeong_pkg.egg-info/PKG-INFO
+[1.873s] writing dependency_links to ../../build/gyeong_pkg/gyeong_pkg.egg-info/dependency_links.txt
+[1.873s] writing entry points to ../../build/gyeong_pkg/gyeong_pkg.egg-info/entry_points.txt
+[1.873s] writing requirements to ../../build/gyeong_pkg/gyeong_pkg.egg-info/requires.txt
+[1.873s] writing top-level names to ../../build/gyeong_pkg/gyeong_pkg.egg-info/top_level.txt
+[1.875s] reading manifest file '../../build/gyeong_pkg/gyeong_pkg.egg-info/SOURCES.txt'
+[1.875s] writing manifest file '../../build/gyeong_pkg/gyeong_pkg.egg-info/SOURCES.txt'
+[1.875s] running build
+[1.875s] running build_py
+[1.876s] creating /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build
+[1.876s] creating /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib
+[1.876s] creating /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg
+[1.876s] copying gyeong_pkg/__init__.py -> /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg
+[1.876s] copying gyeong_pkg/yolo.py -> /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg
+[1.876s] copying gyeong_pkg/dobot_mv.py -> /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg
+[1.876s] running install
+[1.876s] running install_lib
+[1.877s] creating /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg
+[1.877s] copying /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg/__init__.py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg
+[1.877s] copying /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg/yolo.py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg
+[1.877s] copying /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg/dobot_mv.py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg
+[1.877s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg/__init__.py to __init__.cpython-310.pyc
+[1.877s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg/yolo.py to yolo.cpython-310.pyc
+[1.877s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg/dobot_mv.py to dobot_mv.cpython-310.pyc
+[1.877s] running install_data
+[1.877s] creating /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/share/ament_index
+[1.877s] creating /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/share/ament_index/resource_index
+[1.878s] creating /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/share/ament_index/resource_index/packages
+[1.878s] copying resource/gyeong_pkg -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/share/ament_index/resource_index/packages
+[1.878s] copying package.xml -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/share/gyeong_pkg
+[1.878s] copying launch/test.launch.py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/share/gyeong_pkg
+[1.878s] running install_egg_info
+[1.878s] Copying ../../build/gyeong_pkg/gyeong_pkg.egg-info to /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg-0.0.0-py3.10.egg-info
+[1.878s] running install_scripts
+[1.892s] Installing dobot_mv script to /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/gyeong_pkg
+[1.892s] Installing yolo script to /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/gyeong_pkg
+[1.892s] writing list of installed files to '/home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/install.log'
+[1.917s] Invoked command in '/home/ubuntu/magician_ros2_control_system_ws/src/gyeong_pkg' returned '0': PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gyeong_pkg build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/install.log --single-version-externally-managed install_data

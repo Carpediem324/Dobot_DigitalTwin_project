@@ -1,0 +1,44 @@
+[1.563s] Invoking command in '/home/ubuntu/magician_ros2_control_system_ws/src/dobot_diagnostics': AMENT_PREFIX_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs LD_LIBRARY_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/lib/python3.10/site-packages:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dobot_diagnostics build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/install.log --single-version-externally-managed install_data
+[1.777s] running egg_info
+[1.777s] creating ../../build/dobot_diagnostics/dobot_diagnostics.egg-info
+[1.777s] writing ../../build/dobot_diagnostics/dobot_diagnostics.egg-info/PKG-INFO
+[1.777s] writing dependency_links to ../../build/dobot_diagnostics/dobot_diagnostics.egg-info/dependency_links.txt
+[1.777s] writing entry points to ../../build/dobot_diagnostics/dobot_diagnostics.egg-info/entry_points.txt
+[1.778s] writing requirements to ../../build/dobot_diagnostics/dobot_diagnostics.egg-info/requires.txt
+[1.778s] writing top-level names to ../../build/dobot_diagnostics/dobot_diagnostics.egg-info/top_level.txt
+[1.778s] writing manifest file '../../build/dobot_diagnostics/dobot_diagnostics.egg-info/SOURCES.txt'
+[1.782s] reading manifest file '../../build/dobot_diagnostics/dobot_diagnostics.egg-info/SOURCES.txt'
+[1.783s] writing manifest file '../../build/dobot_diagnostics/dobot_diagnostics.egg-info/SOURCES.txt'
+[1.783s] running build
+[1.783s] running build_py
+[1.783s] creating /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/build
+[1.783s] creating /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/build/lib
+[1.783s] creating /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/build/lib/dobot_diagnostics
+[1.783s] copying dobot_diagnostics/__init__.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/build/lib/dobot_diagnostics
+[1.783s] copying dobot_diagnostics/alarms_parser.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/build/lib/dobot_diagnostics
+[1.783s] copying dobot_diagnostics/diagnostics_utils.py -> /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/build/lib/dobot_diagnostics
+[1.783s] running install
+[1.783s] running install_lib
+[1.783s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/lib/python3.10/site-packages/dobot_diagnostics
+[1.784s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/build/lib/dobot_diagnostics/__init__.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/lib/python3.10/site-packages/dobot_diagnostics
+[1.784s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/build/lib/dobot_diagnostics/alarms_parser.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/lib/python3.10/site-packages/dobot_diagnostics
+[1.784s] copying /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/build/lib/dobot_diagnostics/diagnostics_utils.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/lib/python3.10/site-packages/dobot_diagnostics
+[1.784s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/lib/python3.10/site-packages/dobot_diagnostics/__init__.py to __init__.cpython-310.pyc
+[1.784s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/lib/python3.10/site-packages/dobot_diagnostics/alarms_parser.py to alarms_parser.cpython-310.pyc
+[1.785s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/lib/python3.10/site-packages/dobot_diagnostics/diagnostics_utils.py to diagnostics_utils.cpython-310.pyc
+[1.785s] running install_data
+[1.785s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/share/ament_index
+[1.785s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/share/ament_index/resource_index
+[1.785s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/share/ament_index/resource_index/packages
+[1.785s] copying resource/dobot_diagnostics -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/share/ament_index/resource_index/packages
+[1.785s] copying package.xml -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/share/dobot_diagnostics
+[1.785s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/share/dobot_diagnostics/launch
+[1.785s] copying launch/alarms_analyzer.launch.py -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/share/dobot_diagnostics/launch
+[1.785s] creating /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/share/dobot_diagnostics/config
+[1.785s] copying config/analyzer_params.yaml -> /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/share/dobot_diagnostics/config
+[1.785s] running install_egg_info
+[1.785s] Copying ../../build/dobot_diagnostics/dobot_diagnostics.egg-info to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/lib/python3.10/site-packages/dobot_diagnostics-1.0.0-py3.10.egg-info
+[1.786s] running install_scripts
+[1.796s] Installing alarms_parser script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/lib/dobot_diagnostics
+[1.796s] writing list of installed files to '/home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/install.log'
+[1.814s] Invoked command in '/home/ubuntu/magician_ros2_control_system_ws/src/dobot_diagnostics' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs LD_LIBRARY_PATH=/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_diagnostics/lib/python3.10/site-packages:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dobot_diagnostics build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/dobot_diagnostics/install.log --single-version-externally-managed install_data

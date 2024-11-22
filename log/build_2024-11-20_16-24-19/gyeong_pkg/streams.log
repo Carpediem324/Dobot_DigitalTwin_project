@@ -1,0 +1,25 @@
+[1.228s] Invoking command in '/home/ubuntu/magician_ros2_control_system_ws/src/gyeong_pkg': PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gyeong_pkg build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/install.log --single-version-externally-managed install_data
+[1.398s] running egg_info
+[1.399s] writing ../../build/gyeong_pkg/gyeong_pkg.egg-info/PKG-INFO
+[1.399s] writing dependency_links to ../../build/gyeong_pkg/gyeong_pkg.egg-info/dependency_links.txt
+[1.399s] writing entry points to ../../build/gyeong_pkg/gyeong_pkg.egg-info/entry_points.txt
+[1.399s] writing requirements to ../../build/gyeong_pkg/gyeong_pkg.egg-info/requires.txt
+[1.399s] writing top-level names to ../../build/gyeong_pkg/gyeong_pkg.egg-info/top_level.txt
+[1.400s] reading manifest file '../../build/gyeong_pkg/gyeong_pkg.egg-info/SOURCES.txt'
+[1.401s] writing manifest file '../../build/gyeong_pkg/gyeong_pkg.egg-info/SOURCES.txt'
+[1.401s] running build
+[1.401s] running build_py
+[1.401s] copying gyeong_pkg/yolo.py -> /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg
+[1.401s] running install
+[1.401s] running install_lib
+[1.402s] copying /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg/yolo.py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg
+[1.402s] byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg/yolo.py to yolo.cpython-310.pyc
+[1.403s] running install_data
+[1.403s] running install_egg_info
+[1.404s] removing '/home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.404s] Copying ../../build/gyeong_pkg/gyeong_pkg.egg-info to /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg-0.0.0-py3.10.egg-info
+[1.404s] running install_scripts
+[1.419s] Installing dobot_mv script to /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/gyeong_pkg
+[1.419s] Installing yolo script to /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/gyeong_pkg
+[1.419s] writing list of installed files to '/home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/install.log'
+[2.525s] Invoked command in '/home/ubuntu/magician_ros2_control_system_ws/src/gyeong_pkg' returned '0': PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gyeong_pkg build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/install.log --single-version-externally-managed install_data

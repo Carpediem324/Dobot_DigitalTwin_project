@@ -1,0 +1,3 @@
+[console_scripts]
+gd = interate_prac.getDistance:main
+

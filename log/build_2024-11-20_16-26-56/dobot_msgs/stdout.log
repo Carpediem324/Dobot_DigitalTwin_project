@@ -1,0 +1,20 @@
+[  1%] Built target dobot_msgs__cpp
+[ 12%] Built target dobot_msgs__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_dobot_msgs
+[ 24%] Built target dobot_msgs__rosidl_typesupport_introspection_cpp
+[ 35%] Built target dobot_msgs__rosidl_typesupport_cpp
+[ 47%] Built target dobot_msgs__rosidl_typesupport_fastrtps_cpp
+[ 58%] Built target dobot_msgs__rosidl_typesupport_c
+[ 70%] Built target dobot_msgs__rosidl_typesupport_introspection_c
+[ 81%] Built target dobot_msgs__rosidl_typesupport_fastrtps_c
+[ 81%] Built target dobot_msgs
+[ 82%] Built target dobot_msgs__py
+[ 93%] Built target dobot_msgs__rosidl_generator_py
+[ 95%] Built target dobot_msgs__rosidl_typesupport_c__pyext
+[ 97%] Built target dobot_msgs__rosidl_typesupport_introspection_c__pyext
+[100%] Built target dobot_msgs__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing dobot_msgs.egg-info/PKG-INFO
+writing dependency_links to dobot_msgs.egg-info/dependency_links.txt
+writing top-level names to dobot_msgs.egg-info/top_level.txt
+reading manifest file 'dobot_msgs.egg-info/SOURCES.txt'
