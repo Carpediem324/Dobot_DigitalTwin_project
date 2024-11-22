@@ -3,6 +3,30 @@ from rclpy.node import Node
 from sensor_msgs.msg import JointState
 import socket
 
+# 조인트 범위 설정 (각도 단위)
+JOINT_LIMITS = [
+    (-90, 90),      # 1번 조인트
+    (0.0, 85),      # 2번 조인트
+    (-10, 95),      # 3번 조인트
+    (-90, 90)       # 4번 조인트
+]
+
+# 라디안 단위의 조인트 제한
+RADIAN_LIMITS = [
+    (-2.18, 2.18),  # 1번 조인트
+    (-0.10, 0.88),  # 2번 조인트
+    (-0.94, 1.35),  # 3번 조인트
+    (-2.18, 2.18)   # 4번 조인트
+]
+
+def scale_to_limits(radian_value, radian_limits, degree_limits):
+    """라디안 값을 각도 범위로 비율 조정"""
+    rad_min, rad_max = radian_limits
+    deg_min, deg_max = degree_limits
+    # 비율 조정
+    scaled_value = ((radian_value - rad_min) / (rad_max - rad_min)) * (deg_max - deg_min) + deg_min
+    return scaled_value
+
 
 class JointStateSocketPublisher(Node):
     def __init__(self, host, port):
@@ -41,9 +65,17 @@ class JointStateSocketPublisher(Node):
             return
 
         try:
-            # 조인트 값 추출
-            joint_positions = [pos * 35 for pos in msg.position[:3]]  # 앞 3개 축만 사용
-            data = ','.join(map(str, joint_positions))
+            # 조인트 값 추출 및 비율 조정
+            scaled_positions = []
+            for i, radian_value in enumerate(msg.position[:3]):  # 앞 3개 축만 사용
+                scaled_value = scale_to_limits(
+                    radian_value,
+                    RADIAN_LIMITS[i],
+                    JOINT_LIMITS[i]
+                )
+                scaled_positions.append(scaled_value)
+            
+            data = ','.join(map(str, scaled_positions))
             self.get_logger().info(f"Sending joint data: {data}")
             
             # 소켓으로 데이터 전송
@@ -67,9 +99,6 @@ def main(args=None):
     rclpy.init(args=args)
 
     # 서버 IP와 포트 설정
-    # 경석이 컴
-    # host = '192.168.26.37'
-    # 내컴
     host = '192.168.26.36'
     port = 10000
 
