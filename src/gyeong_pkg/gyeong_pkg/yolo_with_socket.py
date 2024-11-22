@@ -20,6 +20,9 @@ import time
 
 class RealSenseYoloNode(Node):
     def __init__(self):
+        # Parameter MAX buffer is maxparam, when get colordata over overcost send socket
+        self.maxparam = 20
+        self.overcost = 16
         super().__init__('realsense_yolov5_node')
 
         # YOLOv5 model_load
@@ -128,7 +131,7 @@ class RealSenseYoloNode(Node):
 
     def update_recent_detections(self, label, color_name):
         """Add a detection to the buffer and maintain the size limit."""
-        if len(self.recent_detections) >= 20:
+        if len(self.recent_detections) >= self.maxparam:
             self.recent_detections.pop(0)  # Remove the oldest detection
         self.recent_detections.append((label, color_name))
 
@@ -186,7 +189,7 @@ class RealSenseYoloNode(Node):
         print(f"Majority color: {majority_color}, Count: {count}")
 
         # Perform action if majority count is sufficient
-        if count >= 16:
+        if count >= self.overcost:
             try:
                 if majority_color == 'red':
                     self.socket.sendall(b'1')
