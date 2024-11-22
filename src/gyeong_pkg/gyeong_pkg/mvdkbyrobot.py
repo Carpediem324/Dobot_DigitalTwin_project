@@ -3,6 +3,10 @@ from rclpy.node import Node
 from sensor_msgs.msg import JointState
 import socket
 
+# 서버 IP와 포트 설정
+HOST = '192.168.26.36'
+PORT = 10000
+
 # 조인트 범위 설정 (각도 단위)
 JOINT_LIMITS = [
     (-90, 90),      # 1번 조인트
@@ -98,11 +102,9 @@ class JointStateSocketPublisher(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    # 서버 IP와 포트 설정
-    host = '192.168.26.36'
-    port = 10000
 
-    node = JointStateSocketPublisher(host, port)
+
+    node = JointStateSocketPublisher(HOST, PORT)
 
     try:
         rclpy.spin(node)
