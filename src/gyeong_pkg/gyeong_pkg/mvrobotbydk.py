@@ -7,7 +7,7 @@ from dobot_msgs.srv import SuctionCupControl
 
 # 소켓 클라이언트 설정
 HOST = '192.168.26.36'  # 서버 IP 주소
-PORT = 10000            # 서버 포트 번호
+PORT = 10001            # 서버 포트 번호
 
 class PickAndPlaceNode(Node):
     def __init__(self):

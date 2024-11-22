@@ -11,7 +11,7 @@ RB1 = RDK.Item("Dobot Magician", itemtype=2)  # Dobot Magician 로봇
 
 # 소켓 서버 설정
 HOST = '0.0.0.0'  # 서버 IP 주소 (로봇이 실행되는 컴퓨터의 IP)
-PORT = 10000      # 서버 포트 번호
+PORT = 10001      # 서버 포트 번호
 
 # 조인트 범위 설정
 JOINT_LIMITS = [
