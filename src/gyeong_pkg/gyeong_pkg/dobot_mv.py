@@ -105,7 +105,7 @@ def main(args=None):
         # Make task_list
         tasks_list = []
 
-        for i in range(1,7):
+        for i in range(1,7):#temp job 한개만하기
             key = str(i)
             val = dobot_position[key]
             temp_val = dobot_position[key].copy()
@@ -120,11 +120,12 @@ def main(args=None):
             tasks_list.append(["move", dobot_position['place'], 1])
             tasks_list.append(["gripper", "close", False]) 
                 
-
+        action_client.send_goal("move",[150.0, 0.0, 100.0, 0.0],1) # sethome
         for (type, target, mode) in tasks_list:
             action_client.send_goal(type,target,mode)
             print(f"Type: {type}, Target: {target}, Mode: {mode}")
             time.sleep(2)
+        action_client.send_goal("move",[150.0, 0.0, 100.0, 0.0],1) # sethome
         rclpy.spin(action_client)
 
 

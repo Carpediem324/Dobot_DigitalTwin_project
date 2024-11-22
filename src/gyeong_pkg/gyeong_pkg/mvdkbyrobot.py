@@ -4,7 +4,9 @@ from sensor_msgs.msg import JointState
 import socket
 
 # 서버 IP와 포트 설정
-HOST = '192.168.26.36'
+# HOST = '192.168.26.36'
+# 경석
+HOST = '192.168.26.37'
 PORT = 10000
 
 # 조인트 범위 설정 (각도 단위)

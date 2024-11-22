@@ -25,7 +25,7 @@ enable_line.request(consumer="enable", type=gpiod.LINE_REQ_DIR_OUT)
 servo_line.request(consumer="servo", type=gpiod.LINE_REQ_DIR_OUT)
 
 # Socket configuration
-server_ip = '192.168.110.140'
+server_ip = '0.0.0.0'
 server_port = 9999
 
 # Global control variables

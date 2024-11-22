@@ -24,9 +24,9 @@ setup(
     entry_points={
         'console_scripts': [
             'dobot_mv=gyeong_pkg.dobot_mv:main',
-            'yolo=gyeong_pkg.only_yolo:main',
             'sock_yolo=gyeong_pkg.yolo_with_socket:main',
-            'robo_dk=gyeong_pkg.robo_dk:main',
+            'mvdkbyrobot=gyeong_pkg.mvdkbyrobot:main',
+            'mvrobotbydk=gyeong_pkg.mvrobotbydk:main',
         ],
     },
 )

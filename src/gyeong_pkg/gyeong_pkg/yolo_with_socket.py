@@ -41,7 +41,10 @@ class RealSenseYoloNode(Node):
         self.bridge = CvBridge()
 
         # Socket setup with retry mechanism
-        self.server_ip = '192.168.110.140'
+        # my ip
+        # self.server_ip = '192.168.110.140'
+        # gyeong ip
+        self.server_ip = '192.168.110.154'
         self.server_port = 9999
         self.socket = None
         self.connect_to_server()
