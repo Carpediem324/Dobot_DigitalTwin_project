@@ -16,13 +16,16 @@ from dobot_msgs.action import PointToPoint
 import torch
 import socket
 import time
-
-
+#pie ip 
+IP = '192.168.110.154'
+PORT = 9999
+MAXCOUNT = 20
+OVERCOST = 16
 class RealSenseYoloNode(Node):
     def __init__(self):
         # Parameter MAX buffer is maxparam, when get colordata over overcost send socket
-        self.maxparam = 20
-        self.overcost = 16
+        self.maxparam = MAXCOUNT
+        self.overcost = OVERCOST
         super().__init__('realsense_yolov5_node')
 
         # YOLOv5 model_load
@@ -44,8 +47,8 @@ class RealSenseYoloNode(Node):
         # my ip
         # self.server_ip = '192.168.110.140'
         # gyeong ip
-        self.server_ip = '192.168.110.154'
-        self.server_port = 9999
+        self.server_ip = IP
+        self.server_port = PORT
         self.socket = None
         self.connect_to_server()
 
