@@ -15,10 +15,17 @@ from dobot_msgs.action import PointToPoint
 
 import torch
 import socket
-import time  # 연결 재시도를 위해 필요
-
+import time
+#pie ip 
+IP = '192.168.110.154'
+PORT = 9999
+MAXCOUNT = 20
+OVERCOST = 16
 class RealSenseYoloNode(Node):
     def __init__(self):
+        # Parameter MAX buffer is maxparam, when get colordata over overcost send socket
+        self.maxparam = MAXCOUNT
+        self.overcost = OVERCOST
         super().__init__('realsense_yolov5_node')
 
         # YOLOv5 model_load
@@ -37,14 +44,21 @@ class RealSenseYoloNode(Node):
         self.bridge = CvBridge()
 
         # Socket setup with retry mechanism
-        self.server_ip = '192.168.110.140'
-        self.server_port = 9999
+        # my ip
+        # self.server_ip = '192.168.110.140'
+        # gyeong ip
+        self.server_ip = IP
+        self.server_port = PORT
         self.socket = None
         self.connect_to_server()
 
-        self.timer = self.create_timer(0.1, self.timer_callback)
+        # Initialize ROI
+        self.roi_position = self.select_roi()
 
-        self.roi_position = (278, 79, 490, 351)
+        # Initialize detection buffer
+        self.recent_detections = []  # List to store recent detections (max 20)
+
+        self.timer = self.create_timer(0.1, self.timer_callback)
 
     def connect_to_server(self):
         """Try to connect to the server. Retry until successful."""
@@ -59,14 +73,43 @@ class RealSenseYoloNode(Node):
                 self.socket = None
                 time.sleep(5)
 
+    def select_roi(self):
+        """Allow the user to select ROI using the mouse."""
+        self.get_logger().info("Opening RealSense camera to select ROI. Press 'Enter' to confirm.")
+        while True:
+            frames = self.pipeline.wait_for_frames()
+            color_frame = frames.get_color_frame()
+            if not color_frame:
+                continue
+
+            color_image = np.asanyarray(color_frame.get_data())
+
+            # Show the image and let the user select ROI
+            roi = cv2.selectROI("Select ROI", color_image, fromCenter=False, showCrosshair=True)
+            cv2.destroyAllWindows()
+
+            # Return the selected ROI as (x1, y1, x2, y2)
+            if roi:
+                x, y, w, h = roi
+                return int(x), int(y), int(x + w), int(y + h)
+
     def get_color_name(self, hsv_color):
+        """Determine the color name based on HSV values."""
         h, s, v = hsv_color
-        if 20 < h < 60 and s < 40 and 180 < v < 230:
+
+        # White color: High brightness, low saturation
+        if 0 <= s < 40 and 180 <= v <= 255:
             return 'white'
-        elif h > 150 and s > 200 and v > 150:
+
+        # Red color: Can exist in two Hue ranges (0-10 and 160-180)
+        if ((0 <= h <= 10 or 160 <= h <= 180) and s >= 100 and v >= 100):
             return 'red'
-        elif 80 < h < 150 and s > 200 and 100 < v < 150:
+
+        # Blue color: Hue range 100-130, medium to high saturation and brightness
+        if 100 <= h <= 130 and s >= 150 and v >= 100:
             return 'blue'
+
+        # If no color is matched
         return 'unknown'
 
     def get_color_bgr(self, color_name):
@@ -91,7 +134,29 @@ class RealSenseYoloNode(Node):
         average_color = np.mean(hsv_region, axis=(0, 1))
         
         return average_color
-    
+
+    def update_recent_detections(self, label, color_name):
+        """Add a detection to the buffer and maintain the size limit."""
+        if len(self.recent_detections) >= self.maxparam:
+            self.recent_detections.pop(0)  # Remove the oldest detection
+        self.recent_detections.append((label, color_name))
+
+    def get_majority_color(self):
+        """Determine the majority color from the recent detections without resetting the buffer."""
+        color_counts = {}
+        for _, color_name in self.recent_detections:
+            if color_name not in color_counts:
+                color_counts[color_name] = 0
+            color_counts[color_name] += 1
+
+        # Find the color with the maximum count
+        majority_color = max(color_counts, key=color_counts.get, default='unknown')
+        majority_count = color_counts.get(majority_color, 0)
+
+        return majority_color, majority_count
+
+
+
     def timer_callback(self):
         # Get RealSense frames
         frames = self.pipeline.wait_for_frames()
@@ -104,13 +169,12 @@ class RealSenseYoloNode(Node):
         color_image = np.asanyarray(color_frame.get_data())
 
         roi_x1, roi_y1, roi_x2, roi_y2 = self.roi_position
-        cv2.rectangle(color_image, (roi_x1, roi_y1), (roi_x2, roi_y2), (255, 0, 0), 2)  # 파란색 ROI 사각형
+        cv2.rectangle(color_image, (roi_x1, roi_y1), (roi_x2, roi_y2), (255, 0, 0), 2)  # ROI rectangle
 
         roi_image = color_image[roi_y1:roi_y2, roi_x1:roi_x2]
-                
+                    
         # YOLOv5 inference
         results = self.yolo_model(roi_image)
-        print(results)
 
         self.detection_result = String()
 
@@ -122,19 +186,19 @@ class RealSenseYoloNode(Node):
             center_color = self.get_center_color(object_roi)
 
             color_name = self.get_color_name(center_color)
-            print("color_name: ", color_name)
-            color_bgr = self.get_color_bgr(color_name)
-
             label = self.yolo_model.names[class_id]
-            self.detection_result.data = label + ' ' + color_name
-            cv2.rectangle(color_image, (roi_x1+x1, roi_y1+y1), (roi_x1+x2, roi_y1+y2), (0, 255, 0), 2)
-            cv2.putText(color_image, f'{label}-{color_name}', (roi_x1+x1, roi_y1+y1 - 10),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+            self.update_recent_detections(label, color_name)  # Add to buffer
 
-            # Send 0 or 1 based on color_name
+        # Determine majority color without resetting the buffer
+        majority_color, count = self.get_majority_color()
+
+        print(f"Majority color: {majority_color}, Count: {count}")
+
+        # Perform action if majority count is sufficient
+        if count >= self.overcost:
             try:
-                if color_name == 'red':
-                    self.socket.sendall(b'1')#if red send 1 to say error
+                if majority_color == 'red':
+                    self.socket.sendall(b'1')
                 else:
                     self.socket.sendall(b'0')
             except socket.error as e:
@@ -142,16 +206,23 @@ class RealSenseYoloNode(Node):
                 self.socket.close()
                 self.socket = None
                 self.connect_to_server()
+            
+            # Clear the buffer after action
+            self.recent_detections.clear()
+            print("Buffer cleared after action.")
 
-        self.detection_publisher.publish(self.detection_result)
+        # Publish image
         ros_image_message = self.bridge.cv2_to_imgmsg(color_image, encoding='bgr8')
         self.image_publisher.publish(ros_image_message)
+
 
     def destroy_node(self):
         self.pipeline.stop()
         if self.socket:
             self.socket.close()  # Close socket on node destruction
         super().destroy_node()
+
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -165,6 +236,7 @@ def main(args=None):
         node.destroy_node()
         rclpy.shutdown()
         cv2.destroyAllWindows()
+
 
 if __name__ == '__main__':
     main()

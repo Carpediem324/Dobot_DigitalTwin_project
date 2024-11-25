@@ -10,8 +10,11 @@ setup.py
 ../../build/gyeong_pkg/gyeong_pkg.egg-info/zip-safe
 gyeong_pkg/__init__.py
 gyeong_pkg/dobot_mv.py
-gyeong_pkg/only_yolo.py
-gyeong_pkg/robo_dk.py
+gyeong_pkg/mvdkbyrobot(window_notuse).py
+gyeong_pkg/mvdkbyrobot.py
+gyeong_pkg/mvrobotbydk(window_notuse).py
+gyeong_pkg/mvrobotbydk.py
+gyeong_pkg/pie(notuse).py
 gyeong_pkg/yolo_with_socket.py
 launch/test.launch.py
 resource/gyeong_pkg

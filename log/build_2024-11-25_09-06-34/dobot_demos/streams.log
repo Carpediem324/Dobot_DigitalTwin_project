@@ -1,0 +1,25 @@
+[1.635s] Invoking command in '/home/ubuntu/magician_ros2_control_system_ws/src/dobot_demos': PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dobot_demos build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/install.log --single-version-externally-managed install_data
+[1.808s] running egg_info
+[1.809s] writing ../../build/dobot_demos/dobot_demos.egg-info/PKG-INFO
+[1.809s] writing dependency_links to ../../build/dobot_demos/dobot_demos.egg-info/dependency_links.txt
+[1.809s] writing entry points to ../../build/dobot_demos/dobot_demos.egg-info/entry_points.txt
+[1.809s] writing requirements to ../../build/dobot_demos/dobot_demos.egg-info/requires.txt
+[1.809s] writing top-level names to ../../build/dobot_demos/dobot_demos.egg-info/top_level.txt
+[1.810s] reading manifest file '../../build/dobot_demos/dobot_demos.egg-info/SOURCES.txt'
+[1.811s] writing manifest file '../../build/dobot_demos/dobot_demos.egg-info/SOURCES.txt'
+[1.811s] running build
+[1.811s] running build_py
+[1.811s] running install
+[1.811s] running install_lib
+[1.812s] running install_data
+[1.812s] running install_egg_info
+[1.813s] removing '/home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos-1.0.0-py3.10.egg-info' (and everything under it)
+[1.813s] Copying ../../build/dobot_demos/dobot_demos.egg-info to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages/dobot_demos-1.0.0-py3.10.egg-info
+[1.814s] running install_scripts
+[1.829s] Installing test_gripper script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/dobot_demos
+[1.829s] Installing test_homing script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/dobot_demos
+[1.829s] Installing test_pick_and_place script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/dobot_demos
+[1.829s] Installing test_point_to_point script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/dobot_demos
+[1.829s] Installing test_suction_cup script to /home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/dobot_demos
+[1.829s] writing list of installed files to '/home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/install.log'
+[1.851s] Invoked command in '/home/ubuntu/magician_ros2_control_system_ws/src/dobot_demos' returned '0': PYTHONPATH=/home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/magician_ros2_control_system_ws/install/dobot_demos/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dobot_demos build --build-base /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/build install --record /home/ubuntu/magician_ros2_control_system_ws/build/dobot_demos/install.log --single-version-externally-managed install_data

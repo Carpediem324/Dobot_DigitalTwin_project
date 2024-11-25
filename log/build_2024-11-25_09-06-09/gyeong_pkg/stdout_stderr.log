@@ -1,0 +1,44 @@
+running egg_info
+writing ../../build/gyeong_pkg/gyeong_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/gyeong_pkg/gyeong_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/gyeong_pkg/gyeong_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/gyeong_pkg/gyeong_pkg.egg-info/requires.txt
+writing top-level names to ../../build/gyeong_pkg/gyeong_pkg.egg-info/top_level.txt
+reading manifest file '../../build/gyeong_pkg/gyeong_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/gyeong_pkg/gyeong_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+copying gyeong_pkg/pie(notuse).py -> /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg
+copying gyeong_pkg/mvrobotbydk(window_notuse).py -> /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg
+copying gyeong_pkg/mvdkbyrobot.py -> /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg
+copying gyeong_pkg/mvdkbyrobot(window_notuse).py -> /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg
+copying gyeong_pkg/yolo_with_socket.py -> /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg
+copying gyeong_pkg/mvrobotbydk.py -> /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg
+copying gyeong_pkg/dobot_mv.py -> /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg
+running install
+running install_lib
+copying /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg/pie(notuse).py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg
+copying /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg/mvrobotbydk(window_notuse).py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg
+copying /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg/mvdkbyrobot.py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg
+copying /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg/mvdkbyrobot(window_notuse).py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg
+copying /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg/yolo_with_socket.py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg
+copying /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg/mvrobotbydk.py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg
+copying /home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/build/lib/gyeong_pkg/dobot_mv.py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg
+byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg/pie(notuse).py to pie(notuse).cpython-310.pyc
+byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg/mvrobotbydk(window_notuse).py to mvrobotbydk(window_notuse).cpython-310.pyc
+byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg/mvdkbyrobot.py to mvdkbyrobot.cpython-310.pyc
+byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg/mvdkbyrobot(window_notuse).py to mvdkbyrobot(window_notuse).cpython-310.pyc
+byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg/yolo_with_socket.py to yolo_with_socket.cpython-310.pyc
+byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg/mvrobotbydk.py to mvrobotbydk.cpython-310.pyc
+byte-compiling /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg/dobot_mv.py to dobot_mv.cpython-310.pyc
+running install_data
+copying launch/test.launch.py -> /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/share/gyeong_pkg
+running install_egg_info
+removing '/home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/gyeong_pkg/gyeong_pkg.egg-info to /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/python3.10/site-packages/gyeong_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing dobot_mv script to /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/gyeong_pkg
+Installing mvdkbyrobot script to /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/gyeong_pkg
+Installing mvrobotbydk script to /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/gyeong_pkg
+Installing sock_yolo script to /home/ubuntu/magician_ros2_control_system_ws/install/gyeong_pkg/lib/gyeong_pkg
+writing list of installed files to '/home/ubuntu/magician_ros2_control_system_ws/build/gyeong_pkg/install.log'
