@@ -16,8 +16,9 @@ from dobot_msgs.action import PointToPoint
 import torch
 import socket
 import time
-#pie ip 
-IP = '192.168.110.154'
+#pie ip 경석이꺼
+# IP = '192.168.110.154'
+IP = '192.168.110.140'
 PORT = 9999
 MAXCOUNT = 20
 OVERCOST = 16

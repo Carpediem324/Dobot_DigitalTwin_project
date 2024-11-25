@@ -1,17 +1,22 @@
 #!/bin/bash
 
-# 1. 두봇 브링업 실행
-xterm -hold -e "
-source ~/magician_ros2_control_system_ws/install/setup.bash && \
-ros2 launch dobot_bringup dobot_magician_control_system.launch.py
-" &
+# # 1. 두봇 브링업 실행
+# xterm -hold -e "
+# source ~/magician_ros2_control_system_ws/install/setup.bash && \
+# ros2 launch dobot_bringup dobot_magician_control_system.launch.py
+# " &
 
 # 1-1. 두봇 브링업 초기화 완료 대기
 echo "Waiting for dobot_bringup to fully initialize..."
-while ! ros2 node list | grep -q "/dobot_homing_srv"; do
+while ! ros2 node list | grep -q "/dobot_PTP_server"; do
     sleep 1
 done
 echo "dobot_bringup is fully initialized!"
+
+
+
+source ~/magician_ros2_control_system_ws/install/setup.bash
+ros2 service call /dobot_homing_service dobot_msgs/srv/ExecuteHomingProcedure
 
 # 2. 두봇 움직임을 RoboDK에 표현
 xterm -hold -e "
