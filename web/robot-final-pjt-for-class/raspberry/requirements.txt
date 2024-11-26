@@ -1,0 +1,10 @@
+asgiref==3.8.1
+colorzero==2.0
+Django==4.2.13
+django-cors-headers==4.3.1
+djangorestframework==3.15.2
+gpiozero==2.0.1
+lgpio==0.2.2.0
+pigpio==1.78
+RPi.GPIO==0.7.1
+sqlparse==0.5.0

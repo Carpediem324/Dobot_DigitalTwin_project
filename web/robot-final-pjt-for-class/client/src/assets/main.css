@@ -1,0 +1,50 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex; /* Flexbox 레이아웃을 사용 */
+  justify-content: center; /* 수평으로 가운데 정렬 */
+  align-items: center; /* 수직으로 가운데 정렬 */
+  height: 100vh;
+  margin: 0;
+}
+
+.root {
+  min-height: 730px;
+  max-height: 730px;
+  min-width: 1250px;
+  max-width: 1250px;
+}
+
+.section {
+  border: 1px solid #c1d0d7;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  position: relative;
+  display: inline;
+  top: -10px;
+  left: 10px;
+  background-color: #eceeeb;
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
+.card-title {
+  font-size: 1.3rem;
+}
+
+.card-chart {
+  min-height: 220px;
+  max-height: 220px;
+}

@@ -1,0 +1,46 @@
+[
+    {
+        "model": "rests.responselog",
+        "pk": 1,
+        "fields": {
+            "program": "start",
+            "conveyer_speed": "0",
+            "joint1": "0.00",
+            "joint2": "0.00",
+            "joint3": "0.00",
+            "joint4": "0.00",
+            "location_x": "0.0",
+            "location_y": "0.0",
+            "location_z": "0.0",
+            "obj_detection_result": "1 2 3",
+            "temp_result": "25",
+            "ultrasonic_result": "30",
+            "infrared_result": "true",
+            "pressure_result": "1024",
+            "light_result": "300",
+            "cdate": "2024-10-31 14:45:00"
+        }
+    },
+    {
+        "model": "rests.responselog",
+        "pk": 2,
+        "fields": {
+            "program": "stop",
+            "conveyer_speed": "250",
+            "joint1": "20.00",
+            "joint2": "20.00",
+            "joint3": "20.00",
+            "joint4": "20.00",
+            "location_x": "0.9",
+            "location_y": "0.2",
+            "location_z": "0.3",
+            "obj_detection_result": "4 5 6",
+            "temp_result": "25",
+            "ultrasonic_result": "30",
+            "infrared_result": "true",
+            "pressure_result": "1024",
+            "light_result": "300",
+            "cdate": "2024-10-31 16:45:00"
+        }
+    }
+]

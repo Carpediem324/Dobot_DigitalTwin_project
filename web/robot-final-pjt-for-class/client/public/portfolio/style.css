@@ -1,0 +1,478 @@
+/* default */
+* {
+	font-family: "Noto Sans KR", sans-serif;
+	list-style: none;
+}
+ul {
+	padding-left: 0px;
+}
+a {
+	text-decoration: none;
+}
+
+/* common */
+
+/* 최대 너비 576px 까지 제공됨 */
+#not-provided {
+	display: none;
+}
+@media (max-width: 575px) {
+	header,
+	main,
+	article,
+	footer {
+		display: none !important;
+	}
+	#not-provided {
+		display: block;
+	}
+}
+
+header > nav > .icon-container,
+#my-intro,
+#skills > ul,
+#project > .edu-project-container,
+#contact > .contact-container {
+	margin-left: 12rem;
+}
+header > nav > #header-nav,
+#my-intro,
+#skills > ul,
+#project > .edu-project-container,
+#contact > .contact-container {
+	margin-right: 12rem;
+}
+@media (max-width: 992px) {
+	header > nav > .icon-container,
+	#my-intro,
+	#skills > ul,
+	#project > .edu-project-container,
+	#contact > .contact-container {
+		margin-left: 6rem;
+	}
+	header > nav > .icon-container,
+	#my-intro,
+	#skills > ul,
+	#project > .edu-project-container,
+	#contact > .contact-container {
+		margin-right: 6rem;
+	}
+}
+#frontpage,
+#my-intro,
+#skills,
+#project,
+#contact {
+	/* cause of the fixed header */
+	padding-top: 5rem;
+}
+#frontpage > .title-container > h2,
+#my-intro .info-text-container > .top-text,
+#my-intro .info-text-container .icon-container,
+#skills .card-header,
+#project .date,
+#contact > h1 {
+	color: rgba(0, 187, 255, 0.614);
+}
+#frontpage > .title-container button,
+#skills,
+#contact button,
+#contact .contact-info-container .icon-container {
+	background-color: rgba(0, 187, 255, 0.614);
+}
+#frontpage > .title-container > h1,
+#my-intro .info-text-container > h1,
+#my-intro .my-interests-container > h2,
+#my-intro .my-interests-container > ul,
+#project > h1,
+#project h2,
+#project h3,
+#contact > h2,
+#contact .contact-info-container .kategorie-name {
+	color: rgb(4, 1, 112);
+}
+#frontpage > .title-container > ul,
+#my-intro .info-text-container .column-data,
+#project .role,
+#contact .contact-info-container .content {
+	color: rgba(116, 116, 116, 0.697);
+}
+h1,
+h2,
+header,
+#my-intro .info-text-container .column-name,
+#my-intro .info-text-container .column-data,
+#skills .card-header {
+	font-weight: bold;
+}
+
+/* header */
+header > nav {
+	background-color: white;
+}
+header .icon-container span {
+	font-size: 3rem;
+}
+header ul {
+	font-size: 1.4rem;
+}
+
+/* #frontpage = main */
+#frontpage {
+	background-color: gainsboro;
+	display: flex;
+	height: 100vh;
+}
+#frontpage > .title-container {
+	flex: 1;
+}
+.frontpage-img-container {
+	flex: 3;
+	background-image: linear-gradient(to left, transparent, gainsboro),
+		url("./img/labtop.jpg");
+	background-size: cover;
+}
+@media (max-width: 1200px) {
+	.frontpage-img-container {
+		display: none;
+	}
+}
+#frontpage > nav {
+	width: 100px;
+}
+#frontpage > nav > ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 70%;
+}
+#frontpage > nav li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#frontpage > nav .github-icon {
+	height: 2.8rem;
+}
+#frontpage > .title-container {
+	padding-left: 10rem;
+	padding-top: 10rem;
+}
+#frontpage > .title-container > h1 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#frontpage > .title-container > ul {
+	margin-bottom: 30px;
+}
+#frontpage > .title-container button {
+	margin-right: 20px;
+	border-radius: 20px;
+	color: white;
+}
+@media (max-width: 992px) {
+	#frontpage > nav li {
+		display: none;
+	}
+	#frontpage > .title-container {
+		padding-left: 1rem;
+		padding-top: 8rem;
+	}
+	#frontpage h2 {
+		font-size: 1.5rem;
+	}
+	#frontpage h1 {
+		font-size: 1.8rem;
+	}
+	#frontpage ul {
+		font-size: 0.8rem;
+	}
+}
+
+/* #my-intro */
+#my-intro {
+	display: flex;
+	align-items: center;
+}
+#my-intro > .my-intro-layout-parent {
+	display: flex;
+	margin-bottom: 120px;
+}
+@media (max-width: 992px) {
+	#my-intro > .my-intro-layout-parent {
+		flex-direction: column;
+	}
+}
+#my-intro .profile-img-container {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#my-intro .info-text-container {
+	flex: 2;
+	padding-left: 50px;
+}
+#my-intro .profile-img {
+	height: 36rem;
+	width: 23rem;
+	background-image: url("./img/profile.jpg");
+	background-size: cover;
+}
+#my-intro .info-text-container > .top-text {
+	margin-bottom: 40px;
+}
+@media (max-width: 992px) {
+	#my-intro .info-text-container > .top-text {
+		margin-top: 80px;
+	}
+}
+#my-intro .info-text-container > h1 {
+	margin-bottom: 20px;
+}
+#my-intro .info-text-container > p {
+	margin-bottom: 30px;
+}
+#my-intro .info-text-container > .contact-info-ul {
+	height: 200px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+}
+#my-intro .contact-info-ul .row {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#my-intro .contact-info-ul .icon-container {
+	flex: 1;
+}
+#my-intro .contact-info-ul .column-name {
+	flex: 4;
+}
+#my-intro .contact-info-ul .column-data {
+	flex: 5;
+}
+#my-intro .my-interests-container > h2 {
+	margin-bottom: 20px;
+}
+#my-intro .my-interests-container > ul {
+	display: flex;
+}
+#my-intro .my-interests-container li {
+	margin-right: 4rem;
+	display: flex;
+	width: 2rem;
+	justify-content: space-between;
+}
+
+/* #skills */
+#skills > h1 {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 3rem;
+}
+#skills > ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#skills .card {
+	width: 20rem;
+	box-shadow: 1rem 1rem 1rem rgb(111, 111, 111);
+	margin-bottom: 100px;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+#skills .card-header {
+	font-size: 1.5rem;
+}
+#skills .card-body img {
+	height: 4rem;
+	margin-top: 10px;
+}
+
+/* #project */
+#project > h1 {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+#project > .edu-project-container {
+	display: flex;
+}
+#project .edu-container {
+	flex: 2;
+}
+#project .project-container {
+	flex: 1;
+}
+@media (max-width: 992px) {
+	#project > .edu-project-container {
+		flex-direction: column;
+	}
+}
+#project > .edu-project-container h2 {
+	display: flex;
+	align-items: center;
+}
+#project > .edu-project-container h2 > .icon {
+	font-size: 3rem;
+	margin-right: 20px;
+}
+#project h2,
+#project li {
+	margin-bottom: 30px;
+}
+#project li {
+	border-left: 5px solid rgb(4, 1, 112);
+	padding-left: 30px;
+}
+#project .date {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+}
+#project .date-data {
+	margin-left: 20px;
+}
+@media (max-width: 1200px) {
+	#project h3 {
+		font-size: 1.5rem;
+	}
+}
+@media (max-width: 992px) {
+	#project h3 {
+		font-size: 1rem;
+	}
+	#project .role {
+		font-size: 0.8rem;
+	}
+	#project .date-data {
+		font-size: 0.8rem;
+	}
+}
+
+/* #contact */
+#contact {
+	margin-bottom: 100px;
+}
+#contact > h1,
+#contact > h2 {
+	text-align: center;
+}
+#contact > h1 {
+	font-size: 2rem;
+}
+#contact > h2 {
+	font-size: 3rem;
+	margin-bottom: 80px;
+}
+#contact > .contact-container {
+	display: flex;
+}
+#contact .input-container {
+	flex: 2;
+}
+#contact .name-email-container,
+#contact .title-container,
+#contact .content-container {
+	margin-bottom: 40px;
+}
+#contact .name-email-container {
+	display: flex;
+	justify-content: space-between;
+}
+#contact .name-email-container > .name-container,
+#contact .name-email-container > .email-container {
+	flex: 1;
+}
+#contact .name-email-container > .name-container {
+	margin-right: 20px;
+}
+#contact .name-email-container > .email-container {
+	margin-left: 20px;
+}
+@media (max-width: 1200px) {
+	#contact .name-email-container {
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	#contact .name-email-container > .name-container {
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+	#contact .name-email-container > .email-container {
+		margin-left: 0px;
+	}
+}
+#contact .contact-info-container {
+	flex: 1;
+}
+#contact-input-content {
+	height: 300px;
+}
+#contact .input-container button {
+	margin-right: 20px;
+	border-radius: 20px;
+	width: 300px;
+	height: 50px;
+	color: white;
+	width: 100%;
+}
+#contact .contact-info-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+@media (max-width: 992px) {
+	#contact .contact-info-container {
+		display: none;
+	}
+}
+#contact .contact-info-container .phone-container,
+#contact .contact-info-container .email-container,
+#contact .contact-info-container .address-container {
+	display: flex;
+	align-items: center;
+	margin-left: 5rem;
+}
+#contact .contact-info-container .icon-container {
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+#contact .contact-info-container .icon-container span {
+	font-size: 2rem;
+	color: white;
+}
+#contact .contact-info-container .kategorie {
+	margin-left: 30px;
+}
+#contact .contact-info-container .kategorie-name {
+	font-size: 1.5rem;
+}
+
+/* footer */
+footer {
+	height: 100px;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer > div {
+	color: white;
+	font-size: 2rem;
+}
+@media (max-width: 768px) {
+	footer > div {
+		font-size: 1rem;
+	}
+}

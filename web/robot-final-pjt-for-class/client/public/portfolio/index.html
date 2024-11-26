@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg fixed-top">
+				<div class="icon-container container-fluid">
+					<a class="navbar-brand" href="#frontpage">
+						<span class="material-symbols-outlined"> attractions </span>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#header-nav"
+						aria-controls="header-nav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+				<div id="header-nav" class="collapse navbar-collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#frontpage">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#my-intro">Intro</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#skills">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#project">Project</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main id="frontpage">
+			<nav>
+				<ul>
+					<li>
+						<a href="https://github.com">
+							<img
+								class="github-icon"
+								src="./img/github-mark.svg"
+								alt="github-icon"
+							/>
+						</a>
+					</li>
+					<li>
+						<a href="https://facebook.com">
+							<img
+								class="facebook-icon"
+								src="./img/icons8-facebook.svg"
+								alt="facebook-icon"
+							/>
+						</a>
+					</li>
+					<li>
+						<a href="https://instagram.com">
+							<img
+								class="instagram-icon"
+								src="./img/icons8-instagram.svg"
+								alt="instagram-icon"
+							/>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<section class="title-container">
+				<h2>Hello World !</h2>
+				<h1>개발자 김찬성</h1>
+				<ul>
+					<li>
+						<span>2023</span>
+						<span>삼성 청년 소프트웨어 아카데미 (SSAFY) 9기 수료</span>
+					</li>
+					<li>
+						<span>2022</span>
+						<span>한국대학교 컴퓨터공학과 졸업</span>
+					</li>
+					<li>
+						<span>2021</span>
+						<span>교내 웹 개발 동아리 레츠코딩 회장</span>
+					</li>
+					<li>
+						<span>2020</span>
+						<span>공공기관 IT 직무 단기 인턴십</span>
+					</li>
+				</ul>
+				<a href="#contact">
+					<button type="button" class="btn">이메일 보내기</button>
+				</a>
+			</section>
+			<section class="frontpage-img-container"></section>
+		</main>
+		<article id="my-intro">
+			<div class="my-intro-layout-parent">
+				<section class="profile-img-container">
+					<div class="profile-img"></div>
+				</section>
+				<section class="info-text-container">
+					<h2 class="top-text">My Intro</h2>
+					<h1>About Me</h1>
+					<p>
+						고등학교 1학년 때 처음 웹개발을 접한 후, 개발자의 꿈을
+						키워나갔습니다. 교내 코딩 동아리 "레츠코딩" 회장으로서 활동했으며,
+						여러 공모전에 참가했습니다. 4학년 때 공공기관 IT 직군 단기 인턴
+						경험에서 차세대 시스템 구축 프로젝트에 참여했으며, 삼성 청년
+						소프트웨어 아카데미 9기에 입교한 후, 대학교에서 부족했던 팀프로젝트
+						경험을 쌓았습니다.
+					</p>
+					<ul class="contact-info-ul">
+						<li class="row">
+							<div class="icon-container">
+								<span class="material-symbols-outlined"> person </span>
+							</div>
+							<div class="column-name">Name</div>
+							<div class="column-data">김찬성</div>
+						</li>
+						<li class="row">
+							<div class="icon-container">
+								<span class="material-symbols-outlined"> call </span>
+							</div>
+							<div class="column-name">Phone</div>
+							<div class="column-data">010-1234-5678</div>
+						</li>
+						<li class="row">
+							<div class="icon-container">
+								<span class="material-symbols-outlined"> mail </span>
+							</div>
+							<div class="column-name">Email</div>
+							<div class="column-data">kimcs@mail.com</div>
+						</li>
+					</ul>
+					<div class="my-interests-container">
+						<h2>My Interests</h2>
+						<ul>
+							<li>
+								<span class="material-symbols-outlined"> headphones </span>
+								<span>Music</span>
+							</li>
+							<li>
+								<span class="material-symbols-outlined"> flight </span>
+								<span>Travel</span>
+							</li>
+							<li>
+								<span class="material-symbols-outlined"> movie </span>
+								<span>Movie</span>
+							</li>
+							<li>
+								<span class="material-symbols-outlined"> photo_camera </span>
+								<span>Photo</span>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</article>
+		<article id="skills">
+			<h1>SKILLS</h1>
+			<ul>
+				<li class="card">
+					<div class="card-header">Frontend</div>
+					<div class="card-body">
+						<ul>
+							<li>
+								<img
+									src="./img/skills-icon/html_css_js.png"
+									alt="html-css-js"
+								/>
+							</li>
+							<li>
+								<img src="./img/skills-icon/es6.png" alt="es6" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/vuejs.png" alt="vue" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/reactjs.png" alt="react" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/svelte.png" alt="svelte" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/nextjs.png" alt="nextjs" />
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="card">
+					<div class="card-header">Backend</div>
+					<div class="card-body">
+						<ul>
+							<li>
+								<img src="./img/skills-icon/django.png" alt="django" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/spring.png" alt="spring" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/nodejs.png" alt="nodejs" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/spring-boot.png" alt="boot" />
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="card">
+					<div class="card-header">Database</div>
+					<div class="card-body">
+						<ul>
+							<li>
+								<img src="./img/skills-icon/mysql.png" alt="mysql" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/mariadb.png" alt="mariadb" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/postgresql.png" alt="postgresql" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/sqlite.png" alt="sqlite" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/mongodb.png" alt="mongo" />
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="card">
+					<div class="card-header">etc</div>
+					<div class="card-body">
+						<ul>
+							<li>
+								<img src="./img/skills-icon/aws.png" alt="aws" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/linux.png" alt="linux" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/git.png" alt="git" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/typescript.png" alt="ts" />
+							</li>
+							<li>
+								<img src="./img/skills-icon/figma.png" alt="figma" />
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</article>
+		<article id="project">
+			<h1>Education & Project</h1>
+			<div class="edu-project-container">
+				<div class="edu-container">
+					<h2>
+						<span class="icon material-symbols-outlined"> school </span>
+						<span>Education</span>
+					</h2>
+					<ul>
+						<li>
+							<h3>한국대학교 컴퓨터공학과</h3>
+							<div class="role">AI 융합전공</div>
+							<div class="date">
+								<span class="material-symbols-outlined"> calendar_month </span>
+								<span class="date-data">2016.03 - 2022.02</span>
+							</div>
+						</li>
+						<li>
+							<h3>공공기관 IT 직무 단기 인턴십</h3>
+							<div class="role">차세대 시스템 구축 프로젝트 참여</div>
+							<div class="date">
+								<span class="material-symbols-outlined"> calendar_month </span>
+								<span class="date-data">2019.12 - 2020.02</span>
+							</div>
+						</li>
+						<li>
+							<h3>교내 웹 동아리 레츠코딩 회장</h3>
+							<div class="role">지역 소프트웨어 경진대회 입선</div>
+							<div class="date">
+								<span class="material-symbols-outlined"> calendar_month </span>
+								<span class="date-data">2021.03 - 2021.12</span>
+							</div>
+						</li>
+						<li>
+							<h3>삼성 청년 소프트웨어 아카데미 (SSAFY) 9기</h3>
+							<div class="role">프로젝트 우수상</div>
+							<div class="date">
+								<span class="material-symbols-outlined"> calendar_month </span>
+								<span class="date-data">2023.01 - 2023.12</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="project-container">
+					<h2>
+						<span class="icon material-symbols-outlined"> work </span>
+						<span>Project</span>
+					</h2>
+					<ul>
+						<li>
+							<h3>금융상품 추천 웹앱</h3>
+							<div class="role">Vue.js 프론트엔드 개발</div>
+							<div class="date">
+								<span class="material-symbols-outlined"> calendar_month </span>
+								<span class="date-data">2021.03 - 2021.06</span>
+							</div>
+						</li>
+						<li>
+							<h3>영어단어 암기 모바일앱</h3>
+							<div class="role">Django Rest 서버 개발</div>
+							<div class="date">
+								<span class="material-symbols-outlined"> calendar_month </span>
+								<span class="date-data">2021.09 - 2021.12</span>
+							</div>
+						</li>
+						<li>
+							<h3>지역여행 추천 웹서비스</h3>
+							<div class="role">공공 API 와 Node.js 서버 연동</div>
+							<div class="date">
+								<span class="material-symbols-outlined"> calendar_month </span>
+								<span class="date-data">2022.03 - 2022.06</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</article>
+		<article id="contact">
+			<h1>Contact Me</h1>
+			<h2>문의사항</h2>
+			<div class="contact-container">
+				<div class="input-container">
+					<div class="name-email-container">
+						<div class="name-container form-floating">
+							<input
+								type="text"
+								class="form-control"
+								id="contact-input-name"
+								placeholder="name"
+							/>
+							<label for="contact-input-name">이름</label>
+						</div>
+						<div class="email-container form-floating">
+							<input
+								type="email"
+								class="form-control"
+								id="contact-input-email"
+								placeholder="email"
+							/>
+							<label for="contact-input-email">이메일</label>
+						</div>
+					</div>
+					<div class="title-container form-floating">
+						<input
+							type="text"
+							class="form-control"
+							id="contact-input-title"
+							placeholder="title"
+						/>
+						<label for="contact-input-title">제목</label>
+					</div>
+					<div class="content-container form-floating">
+						<textarea
+							type="text"
+							class="form-control"
+							id="contact-input-content"
+							placeholder="content"
+						></textarea>
+						<label for="contact-input-content">내용</label>
+					</div>
+					<button
+						type="button"
+						class="btn"
+						data-bs-toggle="modal"
+						data-bs-target="#user-submit-modal"
+					>
+						이메일 보내기
+					</button>
+				</div>
+				<div class="contact-info-container">
+					<div class="phone-container">
+						<div class="icon-container">
+							<span class="material-symbols-outlined"> call </span>
+						</div>
+						<div class="kategorie">
+							<div class="kategorie-name">Call Me</div>
+							<div class="content">010-1234-5678</div>
+						</div>
+					</div>
+					<div class="email-container">
+						<div class="icon-container">
+							<span class="material-symbols-outlined"> mail </span>
+						</div>
+						<div class="kategorie">
+							<div class="kategorie-name">E-mail</div>
+							<div class="content">kimcs@mail.com</div>
+						</div>
+					</div>
+					<div class="address-container">
+						<div class="icon-container">
+							<span class="material-symbols-outlined"> location_on </span>
+						</div>
+						<div class="kategorie">
+							<div class="kategorie-name">Address</div>
+							<div class="content">서울시 강남구 역삼동</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<footer>
+			<div>©️ 2023. Kim Chan Sung. All right reserved.</div>
+		</footer>
+		<!-- 문의 완료 모달 -->
+		<div class="modal fade" id="user-submit-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title">접수 완료</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+						></button>
+					</div>
+					<div class="modal-body">문의 접수 완료되었습니다!</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							닫기
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h1 id="not-provided">
+			이 사이트는 너비 576px 사이즈 미만의 화면에서 제공되지 않습니다.
+		</h1>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
