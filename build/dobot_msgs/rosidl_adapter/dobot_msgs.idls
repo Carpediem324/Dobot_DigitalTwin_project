@@ -1,8 +1,0 @@
-/home/ubuntu/magician_ros2_control_system_ws/build/dobot_msgs/rosidl_adapter/dobot_msgs:action/PointToPoint.idl
-/home/ubuntu/magician_ros2_control_system_ws/build/dobot_msgs/rosidl_adapter/dobot_msgs:action/SlidingRail.idl
-/home/ubuntu/magician_ros2_control_system_ws/build/dobot_msgs/rosidl_adapter/dobot_msgs:msg/DobotAlarmCodes.idl
-/home/ubuntu/magician_ros2_control_system_ws/build/dobot_msgs/rosidl_adapter/dobot_msgs:msg/GripperStatus.idl
-/home/ubuntu/magician_ros2_control_system_ws/build/dobot_msgs/rosidl_adapter/dobot_msgs:srv/EvaluatePTPTrajectory.idl
-/home/ubuntu/magician_ros2_control_system_ws/build/dobot_msgs/rosidl_adapter/dobot_msgs:srv/ExecuteHomingProcedure.idl
-/home/ubuntu/magician_ros2_control_system_ws/build/dobot_msgs/rosidl_adapter/dobot_msgs:srv/GripperControl.idl
-/home/ubuntu/magician_ros2_control_system_ws/build/dobot_msgs/rosidl_adapter/dobot_msgs:srv/SuctionCupControl.idl
